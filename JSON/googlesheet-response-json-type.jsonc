@@ -1,0 +1,331 @@
+/*O_o*/
+google.visualization.Query.setResponse({
+   "version": "0.6",
+   "reqId": "0",
+   "status": "ok",
+   "sig": "1288063435",
+   "table": {
+      "cols": [
+         {
+            "id": "A",
+            "label": "",
+            "type": "string"
+         },
+         {
+            "id": "B",
+            "label": "",
+            "type": "string"
+         },
+         {
+            "id": "C",
+            "label": "",
+            "type": "string"
+         },
+         {
+            "id": "D",
+            "label": "",
+            "type": "string"
+         },
+         {
+            "id": "E",
+            "label": "",
+            "type": "string"
+         }
+      ],
+      "rows": [
+         {
+            "c": [
+               {
+                  "v": "DIMENSÃO"
+               },
+               {
+                  "v": "DESCRIÇÃO"
+               },
+               {
+                  "v": "ESCOPO"
+               },
+               {
+                  "v": "let arr = [\u0027user_ip\u0027,\u0027user_continent_name\u0027,\u0027user_contry_name\u0027,\u0027user_contry_capital\u0027,\u0027user_state_prov\u0027,\u0027user_state_code\u0027,\u0027user_city\u0027,\u0027user_zipcode\u0027,\u0027user_latitude\u0027,\u0027user_longitude\u0027,\u0027user_isp\u0027,\u0027user_organization\u0027,\u0027user_time_zone\u0027];"
+               },
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_ip"
+               },
+               {
+                  "v": "endereço ip do usuário"
+               },
+               {
+                  "v": "User"
+               },
+               {
+                  "v": "let arrDesc = [\u0027nome do continente\u0027,\u0027nome do país\u0027,\u0027capital do país\u0027,\u0027estado\u0027,\u0027código do estado\u0027,\u0027cidade\u0027,\u0027cep\u0027,\u0027latitude\u0027,\u0027longitude\u0027,\u0027isp internet service provider empresa de internet\u0027,\u0027nome da empresa de internet\u0027,\u0027timezone\u0027];"
+               },
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_continent_name"
+               },
+               {
+                  "v": "nome do continente"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_contry_name"
+               },
+               {
+                  "v": "nome do país"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_contry_capital"
+               },
+               {
+                  "v": "capital do país"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_state_prov"
+               },
+               {
+                  "v": "estado"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_state_code"
+               },
+               {
+                  "v": "código do estado"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_city"
+               },
+               {
+                  "v": "cidade"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_zipcode"
+               },
+               {
+                  "v": "cep"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_latitude"
+               },
+               {
+                  "v": "latitude"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_longitude"
+               },
+               {
+                  "v": "longitude"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_isp"
+               },
+               {
+                  "v": "isp internet service provider empresa de internet"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_organization"
+               },
+               {
+                  "v": "nome da empresa de internet"
+               },
+               {
+                  "v": "User"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               {
+                  "v": "user_time_zone"
+               },
+               {
+                  "v": "timezone"
+               },
+               null,
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               null,
+               null,
+               {
+                  "v": "Evento"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               null,
+               null,
+               {
+                  "v": "Evento"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               null,
+               null,
+               {
+                  "v": "Evento"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         },
+         {
+            "c": [
+               null,
+               null,
+               {
+                  "v": "Evento"
+               },
+               null,
+               {
+                  "v": null
+               }
+            ]
+         }
+      ],
+      "parsedNumHeaders": 0
+   }
+});
