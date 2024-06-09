@@ -1,5 +1,5 @@
-gui, add, listview, x1 y1 w1175 r10 grid vLVAll,name|year_start|year_end|position|height|height (f)|height (in)|height (m)|weight|weight (kg)|LMD (kg/m)|birth_date|college
-; gui, add, listview, x1 y1 w1175 r10 grid vLVAll
+; gui, add, listview, x1 y1 w1175 r10 grid vLVAll,name|year_start|year_end|position|height|height (f)|height (in)|height (m)|weight|weight (kg)|LMD (kg/m)|birth_date|college
+gui, add, listview, x1 y1 w1175 r10 grid vLVAll
 Gui, Show
 
 /*
@@ -26,6 +26,10 @@ GS_GetAllData(url:="https://docs.google.com/spreadsheets/d/1UPX_JCNXP6wcdPadQI3m
    httpRequest.Send("") ; o corpo da solicitação precisa estar vazio
    httpRequest.WaitForResponse()
 
+   ; Variável para verificar se os cabeçalhos foram adicionados
+   headersAdded := false
+   totalColumns :=0
+
    ; Verifica a resposta
    if (httpRequest.Status == 200) {
       responseBody := httpRequest.ResponseText
@@ -34,17 +38,29 @@ GS_GetAllData(url:="https://docs.google.com/spreadsheets/d/1UPX_JCNXP6wcdPadQI3m
 
       for index, row in strsplit(responseBody,"`n","`r")
       {
-         ; Pula a primeira linha
-         if (A_Index = 1)
-            continue
-
          ; Remove aspas extras
          row := RegExReplace(row, """")
          ; Divide a linha em campos
          fields := StrSplit(row, ",")
+         ; Se for a primeira linha
+         if (A_Index = 1)
+         {
+            ; msgbox % fields
+            ; Adiciona colunas dinamicamente ao ListView
+            For i, field in fields
+            {
+               ; msgbox % i field
+               LV_InsertCol(i, ,field)
+               totalColumns++
+            }
+            headersAdded := true
+            continue
+         }
          ; Adiciona os campos ao ListView
          LV_Add("", fields*)
       }
+      ; msgbox % totalColumns
+      LV_ModifyCol(1)
 
       ; Notify("Sucesso ao deletar a propriedade!",responseBody,"","Duration=15 Image=300 GC=0xddddff BC=0x0000FF")
       Clipboard := responseBody
